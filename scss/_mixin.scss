@@ -1,0 +1,30 @@
+@mixin text ($size:18px , $weight:500, $color: #83869A){
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    font-family: $mainfont;
+}
+
+%global{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #F2F2F2;
+    // overflow: hidden;
+    padding: 0 165px;
+
+
+    
+}
+
+%mybutton{
+    width: 167px;
+    height: 56px;
+    background: #13183F;
+    border: none;
+    border-radius: 28px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+}
