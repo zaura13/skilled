@@ -1,3 +1,5 @@
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,7 +55,8 @@ a {
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .s-2, .s-1, header {
@@ -83,15 +86,23 @@ footer .mainfooter > button, .s-1 .container .leftbox button, header .mainheader
 
 header .mainheader {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 25px;
   margin-bottom: 180px;
 }
 header .mainheader > button {
   z-index: 2;
-  transform: translate(-60%, 0);
+  -webkit-transform: translate(-60%, 0);
+      -ms-transform: translate(-60%, 0);
+          transform: translate(-60%, 0);
 }
 header .mainheader > button:hover {
   background-color: #666CA3;
@@ -109,7 +120,9 @@ header .mainheader > button:hover {
   }
   header .mainheader button {
     z-index: 0;
-    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 }
 
@@ -134,9 +147,15 @@ header .mainheader > button:hover {
   margin-bottom: 134px;
 }
 .s-1 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .s-1 .container .leftbox {
   max-width: 457px;
@@ -157,9 +176,13 @@ header .mainheader > button:hover {
   line-height: 28px;
 }
 .s-1 .container .leftbox button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF6F48), to(#F02AA6));
+  background: -o-linear-gradient(top, #FF6F48 0%, #F02AA6 100%);
   background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
 }
 .s-1 .container .leftbox button:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), -webkit-gradient(linear, left top, left bottom, from(#FF6F48), to(#F02AA6));
+  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), -o-linear-gradient(top, #FF6F48 0%, #F02AA6 100%);
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
   border-radius: 31.5px;
 }
@@ -220,7 +243,10 @@ header .mainheader > button:hover {
 @media (max-width: 850px) {
   .s-1 .container {
     width: 100%;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
   }
   .s-1 .container .leftbox, .s-1 .container .rightbox {
@@ -240,12 +266,19 @@ header .mainheader > button:hover {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
 }
 .s-2 .wrapper .first-card {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF6F48), to(#F02AA6));
+  background: -o-linear-gradient(top, #FF6F48 0%, #F02AA6 100%);
   background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
   width: 350px;
   border-radius: 15px;
@@ -256,7 +289,9 @@ header .mainheader > button:hover {
   text-align: start;
 }
 .s-2 .wrapper .first-card:hover {
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 .s-2 .wrapper .first-card h4 {
   font-size: 32px;
@@ -267,7 +302,8 @@ header .mainheader > button:hover {
 }
 .s-2 .wrapper .card {
   width: 350px;
-  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+  -webkit-box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+          box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
   border-radius: 15px;
   padding: 2px 32px 40px;
   background-color: #ffffff;
@@ -276,7 +312,9 @@ header .mainheader > button:hover {
   text-align: start;
 }
 .s-2 .wrapper .card:hover {
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 .s-2 .wrapper .card .card-icon {
   position: relative;
@@ -332,22 +370,35 @@ footer .mainfooter {
   margin: 0 auto;
   width: 90%;
   padding: 46px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 footer .mainfooter > button {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-54.32%, #4851FF), to(#F02AA6));
+  background: -o-linear-gradient(top, #4851FF -54.32%, #F02AA6 100%);
   background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
 }
 footer .mainfooter > button:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), -webkit-gradient(linear, left top, left bottom, color-stop(-54.32%, #4851FF), to(#F02AA6));
+  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), -o-linear-gradient(top, #4851FF -54.32%, #F02AA6 100%);
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
 }
 @media (max-width: 330px) {
   footer .mainfooter {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     padding: 25px 0;
   }
   footer .mainfooter button {
     margin-bottom: 40px;
   }
-}/*# sourceMappingURL=global.css.map */
+}
